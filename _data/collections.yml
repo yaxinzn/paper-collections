@@ -1,0 +1,15 @@
+- year: 2024
+  field: Asset Pricing
+  title: "Example Paper Title"
+  authors: "Author A; Author B"
+  venue: "Journal / Working Paper"
+  link: ""
+  takeaway: "Why this paper matters (one sentence)."
+  variables:
+    - name: "VAR_NAME"
+      definition: "What it measures."
+      construction: "How it is built (formula/steps)."
+      frequency: "Monthly"
+      sample: "US equities 1970–2020"
+      source: "CRSP/Compustat"
+      notes: "Units, winsorization, lags, pitfalls."
