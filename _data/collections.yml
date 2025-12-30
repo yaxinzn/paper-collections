@@ -29,3 +29,48 @@
       sample: ""
       source: ""
       notes: ""
+
+- slug: kilic-tuzel-2026
+  year: 2026
+  field: "Corporate Finance / Investment / Misallocation"
+  title: "Investing in misallocation"
+  authors: "Mete Kılıç; Şelale Tüzel"
+  venue: "Journal of Financial Economics, Vol 176 (Feb 2026), Article 104208"
+  doi_url: "https://doi.org/10.1016/j.jfineco.2025.104208"
+  publisher_url: "https://www.sciencedirect.com/science/article/pii/S0304405X25002168"
+  ssrn_url: "https://ssrn.com/abstract=4464542"
+  pdf_path: "/assets/papers/kilic-tuzel-2026/Kilic_Tuzel_JFE_2026.pdf"
+  takeaway: "A sizable share of firms invest heavily despite low current MPK because they have valuable growth options (rare jumps in sales and MPK). These high-investment/low-MPK firms are younger and more innovative; policies that ignore jump potential reduce dispersion but can lower aggregate productivity."
+  variables:
+    - name: "Total I/K"
+      definition: "Total investment rate (investment-to-capital)."
+      construction: "Investment divided by total capital, combining physical + intangible components (total capital approach). Often industry-adjusted within 2-digit SIC and used for annual median sorts."
+      frequency: "Annual"
+      sample: "Compustat firms"
+      source: "Compustat + intangible capital construction"
+      notes: "Used to form high vs low investment groups."
+
+    - name: "Log MPK"
+      definition: "Log marginal product of capital."
+      construction: "Firm-level MPK measure (constructed; frequently industry-adjusted relative to 2-digit SIC medians)."
+      frequency: "Annual"
+      sample: "Compustat firms"
+      source: "Compustat (constructed)"
+      notes: "Used jointly with investment to define ‘misallocation’ portfolio."
+
+    - name: "High I/K & Low MPK indicator"
+      definition: "Investing-in-misallocation group membership."
+      construction: "Indicator = 1 if firm is above-median Total I/K and below-median Log MPK within industry-year."
+      frequency: "Annual"
+      sample: "Compustat firms"
+      source: "Constructed from Total I/K and Log MPK"
+      notes: "Core empirical object."
+
+    - name: "Jump dummy"
+      definition: "Large growth event."
+      construction: "Event defined by large increases in sales and MPK (paper’s jump definition; see paper for exact cutoffs and window)."
+      frequency: "Event / Annual"
+      sample: "Compustat firms"
+      source: "Compustat (constructed)"
+      notes: "Used to link current investment to future growth options."
+
