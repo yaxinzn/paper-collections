@@ -13,3 +13,19 @@
       sample: "US equities 1970–2020"
       source: "CRSP/Compustat"
       notes: "Units, winsorization, lags, pitfalls."
+
+- year: 2026
+  field: "Corporate Finance / Investment"
+  title: "Kilic & Tuzel (2026) — Investing in misallocation"
+  authors: "Mete Kilic; Selale Tuzel"
+  venue: "JFE (2026)"
+  link: "{{ site.baseurl }}/assets/papers/kilic-tuzel-2026/Kilic_Tuzel_JFE_2026.pdf"
+  takeaway: ""
+  variables:
+    - name: ""
+      definition: ""
+      construction: ""
+      frequency: ""
+      sample: ""
+      source: ""
+      notes: ""
